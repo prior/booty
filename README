@@ -9,8 +9,9 @@ Example
 
 script/generate booty music
 
-and it will create a booty/music/kDF..83s/ directory to put your stuff in.
+this creates a booty/music/kDF..83s/ directory to put your stuff in.
 you are also given a nice view that breaks down whatever you dump in there-- it is reachable from /kDF..83s/
+the view is haml only at the moment (but you can always edit to erb if you need to)
 
 
 super easy.  super sweet.
