@@ -1,0 +1,8 @@
+%ul
+  -dirs,files = decompose_node(node)
+  -files.each do |file|
+    %li{:class=>file.extname}= link_to_public_file(file)
+  -dirs.each do |dir|
+    %li.dir 
+      = dir.basename
+      = render(:partial=>'file_tree', :locals=>{:node=>dir})

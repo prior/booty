@@ -1,0 +1,13 @@
+Description:
+    Creates an isolated/unguessable url to keep out the bots.
+
+Example:
+    ./script/generate booty treasure
+
+    creates:
+        public/37F..84V/
+        public/37F..84V/.gitignore
+        app/controllers/booty_controller.rb
+        app/views/booty/treasure.html.erb
+        route
+        
