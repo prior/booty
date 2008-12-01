@@ -1,13 +1,19 @@
-Atlantis
+Booty
 ========
 
-Introduction goes here.
+Creates an unguessable/hidden url to keep out the bots and spiders.
 
 
 Example
 =======
 
-Example goes here.
+script/generate booty music
+
+and it will create a booty/music/kDF..83s/ directory to put your stuff in.
+you are also given a nice view that breaks down whatever you dump in there-- it is reachable from /kDF..83s/
 
 
-Copyright (c) 2008 [name of plugin creator], released under the MIT license
+super easy.  super sweet.
+
+
+Copyright (c) 2008 thorny_sun@cracklabs.com, released under the MIT license
