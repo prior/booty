@@ -13,8 +13,20 @@ this creates a booty/music/kDF..83s/ directory to put your stuff in.
 you are also given a nice view that breaks down whatever you dump in there-- it is reachable from /kDF..83s/
 the view is haml only at the moment (but you can always edit to erb if you need to)
 
+create as many silos as you want.  you can also use a different controller name if you prefer.
+
 
 super easy.  super sweet.
 
+
+Git Users
+=========
+assuming you don't want to track whatever you dump in the booty directories, you will have to add those directories to your .gitignore, but still touch a file that won't be ignored in the directory so that the dir structure is maintained in production
+
+
+Other info
+==========
+:pretend option works
+script/destroy also works
 
 Copyright (c) 2008 thorny_sun of cracklabs.com, released under the MIT license
