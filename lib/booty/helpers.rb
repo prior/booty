@@ -10,9 +10,19 @@ module Booty
     end
 
     # generates [dirs,files] array,
-    # where dirs and files are each sorted arrays
+    # where dirs and files are each sorted arrays 
+    # zip files get priority
     def decompose_node(pathname)
-      pathname.children.partition{|c| c.directory?}.map{|l| l.sort}
+      pathname.children.partition do |child|
+        child.directory?
+      end.map do |list|
+        list.sort do |a,b|
+          v1, v2 = [a,b].map{|p| p.extname == '.zip' ? 0 : 1}
+          retval = v1<=>v2
+          retval = a.to_s.downcase<=>b.to_s.downcase if retval==0
+          retval
+        end
+      end
     end
     
   end
