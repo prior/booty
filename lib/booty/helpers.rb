@@ -16,7 +16,7 @@ module Booty
       pathname.children.partition do |child|
         child.directory?
       end.map do |list|
-        list.sort do |a,b|
+        list.select{|i| i.basename.to_s!='.gitignore'}.sort do |a,b|
           v1, v2 = [a,b].map{|p| p.extname == '.zip' ? 0 : 1}
           retval = v1<=>v2
           retval = a.to_s.downcase<=>b.to_s.downcase if retval==0
